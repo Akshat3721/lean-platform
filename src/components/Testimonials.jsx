@@ -5,6 +5,10 @@ import headshot2 from '../assets/headshot2.png';
 import headshot3 from '../assets/headshot3.png';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import arrow from '../assets/arrow.png';
+import planet from '../assets/casual-life-3d-orange-planet-with-disk 1.png';
+import gradient1 from '../assets/gradient1.png';
+import gradient2 from '../assets/gradient2.png';
 
 const Testimonials = () => {
   const items = [
@@ -52,7 +56,7 @@ const Testimonials = () => {
     </div>,
   ];
   return (
-    <div className="bg-white h-full">
+    <div className="bg-white h-full relative">
       <SectionTitleSubtitle
         title="What student’s say"
         subtitle="Lorem Ipsum is simply dummy text of the printing."
@@ -65,12 +69,21 @@ const Testimonials = () => {
           autoPlayInterval={1000}
           infinite
           disableButtonsControls
-          //   stagePadding={{ paddingLeft: 400, paddingRight: 400 }}
           responsive={{ 0: { items: 1 }, 768: { items: 3 } }}
-          //   paddingLeft={200}
-          //   paddingRight={200}
         />
       </div>
+      <img src={arrow} alt="" className="absolute left-0 -bottom-20" />
+      <img
+        src={gradient1}
+        alt=""
+        className="absolute -left-40 -bottom-[500px]"
+      />
+      <img src={planet} alt="" className="absolute right-0 -bottom-20" />
+      <img
+        src={gradient2}
+        alt=""
+        className="absolute -right-40 -bottom-[500px]"
+      />
     </div>
   );
 };

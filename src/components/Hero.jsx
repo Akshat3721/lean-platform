@@ -5,7 +5,7 @@ import onlineTest from '../assets/online-test 1.png';
 
 const Hero = () => {
   return (
-    <div className="relative container mx-auto h-[calc(100vh_-_128px)] mt-24">
+    <div className="relative container mx-auto h-[calc(100vh_-_128px)] mt-24 z-10">
       <div className="flex items-center">
         <div className="flex flex-col w-2/5 justify-center">
           <h2 className="capitalize text-black-primary text-[69px] font-extrabold">
